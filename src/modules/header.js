@@ -1,20 +1,18 @@
-export default function createNav() {
-  const header = document.createElement('nav');
-  const ul = document.createElement('ul');
-  const homeButton = createBtn('Home', )
-  const menuButton = createBtn('Menu', )
-  const aboutUsButton = createBtn('About us', );
+export default function createHeader() {
+  const nav = document.createElement('nav');
+  const homeButton = createBtn('Home', () => console.log('test'))
+  const menuButton = createBtn('Menu', () => console.log('test'))
+  const aboutUsButton = createBtn('About us', () => console.log('test'));
   
-  ul.appendChild(homeButton);
-  ul.appendChild(menuButton);
-  ul.appendChild(aboutUsButton);
-  header.appendChild(ul);
+  nav.appendChild(homeButton);
+  nav.appendChild(menuButton);
+  nav.appendChild(aboutUsButton);
 
-  return header;
+  return nav;
 }
 
 function createBtn(text, onClick) {
-  const button = document.createElement('button ');
+  const button = document.createElement('button');
   button.textContent = text;
   button.addEventListener('click', onClick);
   return button;
