@@ -5,8 +5,7 @@ import clock from '../assets/clock.svg';
 import fullStar from '../assets/full_star.svg';
 import halfStar from '../assets/half_star.svg';
 
-export default function menuPage() {;
-  const root = document.body;//remove in the future
+export default function createMenuPage() {;
   const wrapper = document.createElement('div');
   const h2 = document.createElement('h2');
   const cardContainer = document.createElement('div');
@@ -25,7 +24,6 @@ export default function menuPage() {;
   wrapper.appendChild(h2);
   wrapper.appendChild(cardContainer);
 
-  root.appendChild(wrapper)
   return wrapper;
 }
 

@@ -1,6 +1,7 @@
 import "./style.scss";
 import init from "./modules/initialize";
-import menuPage from "./modules/menuPage";
+import createAboutUs from "./modules/aboutUs";
 
 //init();
-menuPage()
+
+createAboutUs();
