@@ -16,11 +16,44 @@ body{
   background-color: $background-color;
 }
 
+
 .wrapper{
   overflow: auto;
-  margin: 0 auto;
+  margin: 100px auto 50px auto;
   max-width: 1000px;
-  min-height: 100vh;
+}
+
+main{
+  overflow: auto;
+  height: 100vh;
+
+  h1{
+    font-weight: 900;
+  }
+
+  p{
+    font-weight: 300;
+    line-height: 2rem;
+  }
+
+  button{
+    margin-top: 3rem;
+  }
+}
+
+.homepage-background{
+  overflow: auto;
+  background-image: url(assets/background.png);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+
+  .wrapper{
+    margin: 0 auto;
+  }
 }
 
 button, a{
@@ -29,12 +62,14 @@ button, a{
 
 nav{
   position: absolute;
-  top: 40px;
+  top: 0;
   left: 0;
+  padding: 20px 0;
   width: 100%;
   display: flex;
   justify-content: center;
   gap:30px;
+  background-color: #23232399;
 
   button{
     appearance: none;
@@ -53,32 +88,6 @@ nav{
       text-decoration: 1px underline $accent-color;
       text-underline-offset: 5px;      
     }
-  }
-}
-
-.main-page{
-  height: 100vh;
-  background-image: url(assets/background.png);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  padding-top: 200px;
-
-  .wrapper{
-    min-height: 0;
-  }
-
-  h1{
-    font-weight: 900;
-  }
-
-  p{
-    font-weight: 300;
-    line-height: 2rem;
-  }
-
-  button{
-    margin-top: 3rem;
   }
 }
 

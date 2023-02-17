@@ -3,9 +3,9 @@ import createHeader from "./header";
 
 export default function init() {
   const root = document.body;
-  const main = document.createElement('main');
-
+  const mainContainer = document.createElement('main');
+  
   root.appendChild(createHeader());
-  root.appendChild(main);
-  main.appendChild(createMainPage());
+  mainContainer.appendChild(createMainPage());
+  root.appendChild(mainContainer);
 }

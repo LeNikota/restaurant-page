@@ -4,7 +4,6 @@ import imgThreeSrc from '../assets/img_3.jpg';
 import imgFourSrc from '../assets/img_4.jpg';
 
 export default function createAboutUs() {
-  const root = document.body;//remove in the future
   const wrapper = document.createElement('div');
   const h2 = document.createElement('h2');
   const descriptionContain = document.createElement('div');
@@ -43,7 +42,6 @@ export default function createAboutUs() {
   imgContainer.appendChild(imgInnerContainerTwo);
   wrapper.appendChild(imgContainer);
   wrapper.appendChild(descriptionContain);
-  root.appendChild(wrapper);//remove in the future
 
   return wrapper;
 }
